@@ -14,6 +14,7 @@
 	<name>taco-cloud</name>
 	<description>Taco Cloud Example</description>
 	<properties>
+		<encoding>UTF-8</encoding>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
@@ -25,7 +26,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -38,7 +38,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -47,5 +46,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
