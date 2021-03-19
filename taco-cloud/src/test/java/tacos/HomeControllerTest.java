@@ -13,6 +13,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+import tacos.controller.HomeController;
+
 @RunWith(SpringRunner.class)
 @WebMvcTest(HomeController.class)
 class HomeControllerTest {
@@ -26,7 +28,7 @@ class HomeControllerTest {
 		mockMvc.perform(get("/"))
 	  	.andExpect(status().isOk())
 	  	.andExpect(view().name("home"))
-	  	.andExpect(content().string(containsString("Welcome to ...")));
+	  	.andExpect(content().string(containsString("Welcomse to ...")));
 		
 	}
 
